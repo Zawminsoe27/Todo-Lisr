@@ -5,6 +5,12 @@ const inputText = selector(".todo-input");
 const addBtn = selector(".addBtn");
 const todoItem = selector(".todo-item");
 
+let date = new Date();
+let day = date.getDate();
+let month = date.getMonth()+1;
+let year = date.getFullYear();
+
+let today = `${day}/${month}/${year}`;
 document.addEventListener("DOMContentLoaded", loadTodos);
 addBtn.addEventListener("click", addTodoList);
 
@@ -22,7 +28,8 @@ function addTodoList(e) {
 function createElement(value) {
   const li = document.createElement("li");
   li.innerHTML = `
-  <span>${value}</span>
+  <span class='todoText'>${value}</span>
+  <span class='date'><i>Created at:</i> ${today}</span>
   <button class="delete-btn">Delete</button>
   `;
   li.querySelector("button").addEventListener("click", deleteTodo);

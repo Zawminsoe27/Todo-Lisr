@@ -1,0 +1,22 @@
+@media only screen and (width <= 1100px) {
+    .input-container {
+        width: 55%;
+        margin-top: 20px;
+    }
+    .todo-item-container {
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (width <= 600px) {
+    .input-container {
+        width: 90%;
+        margin-top: 20px;
+    }
+    .input-container input{
+        width: 80%;
+    }
+    .todo-item-container {
+        margin-top: 40px;
+    }
+}
