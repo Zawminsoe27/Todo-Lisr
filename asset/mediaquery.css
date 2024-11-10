@@ -29,3 +29,13 @@
     width: 90%;
   }
 }
+
+@media only screen and (width <= 650px) {
+  .logo .name,.logo .filename{
+    margin-left: 20%;
+  }
+  .logo span{
+    margin-left: 40%;
+
+  }
+}

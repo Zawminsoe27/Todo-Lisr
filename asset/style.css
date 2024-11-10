@@ -73,23 +73,22 @@ header div {
 .todo-item-container ul li span.todoText {
   font-size: 18px;
   font-family: sans-serif;
-  display:block;
-  width:200%;
+  display: block;
+  width: 200%;
   text-align: justify;
   color: #2d2d2d;
   background-color: rgb(255, 255, 255);
 }
 .todo-item-container ul li span.date {
-color: rgb(255, 0, 0);
+  color: rgb(255, 0, 0);
   display: inline-block;
   font-size: 18px;
   width: 30%;
   margin-right: 5%;
   margin-left: 5%;
   font-weight: 800;
-
 }
-.todo-item-container ul li span.date i{
+.todo-item-container ul li span.date i {
   color: #000;
   font-weight: 500;
   margin-bottom: 10px;
@@ -104,7 +103,6 @@ color: rgb(255, 0, 0);
   background-color: #0f6bd4;
   color: #fff;
   border-radius: 10px;
-
 }
 
 .input-container {
@@ -133,4 +131,63 @@ color: rgb(255, 0, 0);
   width: 85px;
   height: 30px;
   margin-left: 10px;
+}
+.starterPage {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: url("./pexels-polina-kovaleva-5717479.jpg");
+  object-fit: cover;
+  background-size: cover;
+}
+
+.logo {
+  margin-top: 15%;
+  height: 800px;
+  position: relative;
+  display: none;
+}
+.logo .filename {
+  width: max-content;
+  padding: 10px 25px;
+  background: linear-gradient(#a207f0, #f00726);
+  margin-left: 20%;
+  color: #fff;
+  margin-bottom: 50px;
+  user-select: none;
+  
+}
+.logo span {
+  display: inline-block;
+  margin-left: 40%;
+  margin-top: -10px;
+  margin-bottom: 30px;
+  font-size: 25px;
+  background-color: #fff;
+  width: 80px;
+  height: 80px;
+  border-radius: 80px;
+  user-select: none;
+  text-align: center;
+  line-height: 80px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 5px;
+  display: none;
+}
+.logo .name {
+  display: inline-block;
+  margin-left: 50%;
+  width: max-content;
+  padding: 10px 25px;
+  color: #ffffff;
+  font-size: 40px;
+  letter-spacing: 4px;
+  background: linear-gradient(#aa00ff, #000000);
+  user-select: none;
+  display: none;
+}
+
+.typed-cursor.typed-cursor--blink {
+  display: none;
 }
